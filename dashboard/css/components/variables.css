@@ -1,0 +1,52 @@
+:root {
+  /* TESTING BORDERS
+  -------------------------------------------------- */
+  --testBorder1: 1px dashed red !important;
+  --testBorder2: 1px dashed cyan !important;
+  --testBorder3: 1px dashed magenta !important;
+  --testBorder4: 1px dashed lime !important;
+  --testBorder5: 1px dashed blue !important;
+
+  /* Borders
+  -------------------------------------------------- */
+  --dataCategory-border: 1px solid #424242;
+  --grid-border: 1px solid #ccc;
+
+  /* Spacer 
+  -------------------------------------------------- */
+  --spacer: 5px;
+  --spacer-L: calc(var(--spacer) + 5px);
+
+  /* Grid Sizing 
+  -------------------------------------------------- */
+  --map-height: 300px;
+
+  /* Color 
+  -------------------------------------------------- */
+  /* Primary Colors */
+  --orange: rgb(247, 105, 0);
+  --white: rgb(255, 255, 255);
+  --primaryBlue: rgb(0, 14, 84);
+
+  /* Secondary Colors */
+  --mediumOrange: rgb(255, 67, 27);
+  --lightOrange: rgb(255, 142, 0);
+  --mediumBlue: rgb(32, 50, 153);
+  --lightBlue: rgb(43, 114, 215);
+
+  --black: rgb(0, 0, 0);
+  --mediumGray: rgb(112, 119, 128);
+  --lightGray: rgb(173, 179, 184);
+
+  /* Special Use Colors */
+  --darkGray: rgb(64, 64, 64);
+  --darkOrange: rgb(215, 65, 0);
+
+  /* Custom Colors */
+  --bgColor: #616161;
+
+  /* Fonts
+  -------------------------------------------------- */
+  --ShermanSans: ShermanSans, "Trebuchet MS", Tahoma, sans-serif;
+  --ShermanSerif: ShermanSerif;
+}

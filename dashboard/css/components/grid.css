@@ -1,0 +1,99 @@
+#header {
+  grid-area: header;
+  display: inline-block;
+}
+
+#map {
+  grid-area: map;
+}
+
+#chart {
+  grid-area: chart;
+  height: 300px;
+}
+
+#ageByBioSex {
+  grid-area: ageByBioSex;
+  overflow: auto;
+}
+
+#ageByRace {
+  grid-area: ageByRace;
+  overflow: auto;
+}
+
+#reference {
+  grid-area: reference;
+  overflow: auto;
+}
+
+#reference > div {
+  padding: var(--spacer) var(--spacer-L);
+}
+
+#reference div:last-child h4 {
+  margin-bottom: calc(var(--spacer) - 3px);
+  text-decoration: underline;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "map map"
+    "chart chart"
+    "ageByBioSex ageByRace"
+    "reference reference"
+    "footer footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto var(--map-height) auto 300px 100px auto;
+  gap: var(--spacer);
+  padding: var(--spacer);
+}
+
+.gridContainer > div {
+  background-color: var(--black);
+  border: var(--grid-border);
+}
+
+/* 600px and up
+-------------------------------------------------- */
+@media only screen and (min-width: 600px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "map map map"
+      "chart chart chart"
+      "reference ageByBioSex ageByRace"
+      "footer footer footer";
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: auto var(--map-height) auto 300px auto;
+  }
+}
+
+/* 1000px and up
+-------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "ageByBioSex map ageByRace"
+      "ageByBioSex chart ageByRace"
+      "ageByBioSex chart ageByRace"
+      "reference chart ageByRace"
+      "footer footer footer";
+    grid-template-columns: 225px auto 225px;
+    grid-template-rows: auto calc(var(--map-height) + 50px) 150px 50px 150px auto;
+  }
+
+  #chart {
+    grid-area: chart;
+    max-height: 350px;
+  }
+}

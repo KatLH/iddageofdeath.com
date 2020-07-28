@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "name": "vacovid19trends-project",
+      "path": "..\\..\\..\\Users\\hurst\\Documents\\SYU\\vacovid19trends-project"
+    },
+    {
+      "name": "ID-Avgs-Dashboard",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}

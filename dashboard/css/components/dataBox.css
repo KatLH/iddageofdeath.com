@@ -1,0 +1,42 @@
+/* Header stays at the top of the box when the user scrolls down */
+.stickyHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 2px 0;
+  background-color: var(--black);
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.dataItem {
+  padding: 0;
+}
+
+.dataCategory {
+  padding: 4px 10px;
+  border-top: var(--dataCategory-border);
+}
+
+.dataCategory:last-child {
+  border-bottom: var(--dataCategory-border);
+}
+
+.data {
+  padding: 0 6px 0 0;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+/* 600px and up
+-------------------------------------------------- */
+@media only screen and (min-width: 600px) {
+}
+
+/* 1000px and up
+-------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+}

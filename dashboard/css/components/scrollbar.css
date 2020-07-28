@@ -1,0 +1,34 @@
+/* Custom scrollbars for data grid boxes
+-------------------------------------------------- */
+
+/* width */
+#ageByBioSex::-webkit-scrollbar,
+#ageByRace::-webkit-scrollbar,
+#reference::-webkit-scrollbar,
+#map::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+#ageByBioSex::-webkit-scrollbar-track,
+#ageByRace::-webkit-scrollbar-track,
+#reference::-webkit-scrollbar-track,
+#map::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+#ageByBioSex::-webkit-scrollbar-thumb,
+#ageByRace::-webkit-scrollbar-thumb,
+#reference::-webkit-scrollbar-thumb,
+#map::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+#ageByBioSex::-webkit-scrollbar-thumb:hover,
+#ageByRace::-webkit-scrollbar-thumb:hover,
+#reference::-webkit-scrollbar-thumb:hover,
+#map::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
