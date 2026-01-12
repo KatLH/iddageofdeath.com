@@ -7,9 +7,9 @@ $dbname = "id_dashboard"; */
 
 /* BlueHost credentials
 -------------------------------------------------- */
-$username = "vacovido_root";
-$password = "nE3R5&!*R9Lj";
-$dbname = "vacovido_idd_age_of_death";
+$username = "";
+$password = "";
+$dbname = "";
 
 
 $connection = mysqli_connect("localhost" , "$username" , "$password", "$dbname") or die(mysql_error());
